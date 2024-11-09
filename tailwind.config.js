@@ -1,3 +1,4 @@
+const { default: gradient } = require("@material-tailwind/react/theme/components/timeline/timelineIconColors/gradient");
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 /** @type {import('tailwindcss').Config} */
@@ -23,13 +24,18 @@ module.exports = withMT({
         stoneCard: {
           111: "#E1E9EE",
         },
+        gradientCostum: "linear-gradient(90deg, rgba(54, 54, 54, 0) 0%, #7E7E7E 48.5%, rgba(54, 54, 54, 0) 100%)"
+        
+        
       },
       boxShadow: {
         costum: "0px 2px 7px 0px #00000026",
+        dark: "0px 4px 10px 0px #A6A5A526"
       },
       borderRadius: {
         "4xl": "2rem",
       },
+
       spacing: {
         4.5: "1.125rem",
         25: "6.25rem",

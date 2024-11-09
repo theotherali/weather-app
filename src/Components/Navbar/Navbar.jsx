@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
 import { RxExit } from "react-icons/rx";
@@ -7,13 +7,36 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { Collapse, Card } from "@material-tailwind/react";
 
 export default function Navbar() {
-  const [open, setOpen] = React.useState(false);
-
+  const [open, setOpen] = useState(false);
   const toggleOpen = () => setOpen((cur) => !cur);
+  const [dark, setDark] = useState(false);
+
+  const darkModeHandler = () => {
+    setDark(true);
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  };
+
+  const lightModeHandler = () => {
+    setDark(false);
+    document.documentElement.classList.remove("dark");
+    localStorage.theme = "light";
+  };
+
+  // const daekModeHandler = () => {
+  //   setDark(!dark);
+  //   if (localStorage.theme === "dark") {
+  //     document.documentElement.classList.remove("dark");
+  //     localStorage.theme = "light";
+  //   } else {
+  //     document.documentElement.classList.add("dark");
+  //     localStorage.setItem("theme", "dark");
+  //   }
+  // };
 
   return (
     <>
-      <header className="relative flex justify-between h-20 bg-lightPrimary-800 dark:bg-darkPrimary-800 shadow-md px-6">
+      <header className="relative flex justify-between h-[73px] bg-lightPrimary-800 dark:bg-darkPrimary-800 shadow-md dark:shadow-dark px-6">
         <div className="flex-center gap-x-5">
           <div
             className="flex-center h-10 w-10 border border-gray-400 rounded-lg"
@@ -40,35 +63,44 @@ export default function Navbar() {
             Weather Dashboard
           </span>
           <div className="w-14 h-14 rounded-full overflow-hidden">
-            <img src="./public/images/image1.jpg" alt="" />
+            <img src="/images/image1.jpg" alt="" />
           </div>
         </div>
       </header>
-      <Collapse className="w-[220px] mr-[25px] -mt-3" open={open}>
-        <Card className="h-60 px-4 py-3 divide-y" dir="ltr">
+      <Collapse className="w-[220px] mr-[25px] -mt-3 absolute" open={open}>
+        <Card
+          className="h-60 px-4 py-3 divide-y dark:bg-black"
+          dir="ltr"
+        >
           <div className="mb-3">
-            <span>Mode</span>
-            <div className="flex w-full border border-gray-400 h-[33px] mt-1.5 rounded-[4px] child:text-[13px] child:tracking-wider">
-              <span className="flex-center gap-x-2 w-full">
+            <span className="dark:text-lightText-800">Mode</span>
+            <div className="flex w-full border border-gray-400 h-[33px] mt-1.5 rounded-[4px] child:text-[13px] child:tracking-wider overflow-hidden">
+              <span
+                className="flex-center gap-x-2 w-full text-blue-600 dark:text-lightText-800 dark:font-bold"
+                onClick={() => lightModeHandler()}
+              >
                 <IoSunnyOutline />
                 Light
               </span>
               <span className="w-[2px] max-h-full bg-blue-gray-300"></span>
-              <span className="flex-center gap-x-2 w-full text-xs">
+              <span
+              className="flex-center gap-x-2 w-full dark:text-darkText-800 dark:bg-lightPrimary-800 dark:font-bold"
+                onClick={() => darkModeHandler()}
+              >
                 <IoMoonOutline />
                 Dark
               </span>
             </div>
           </div>
           <div className="pt-4 mb-3">
-            <span>Language</span>
+            <span className="dark:text-lightText-800">Language</span>
             <div className="flex w-full border border-gray-400 h-[33px] mt-1.5 rounded-[4px] child:text-[13px] child:tracking-wider">
-              <span className="flex-center w-full">En</span>
+              <span className="flex-center gap-x-2 w-full text-blue-600 dark:text-lightText-800 dark:font-bold">En</span>
               <span className="w-[2px] max-h-full bg-blue-gray-300"></span>
-              <span className="flex-center w-full">Fa</span>
+              <span className="flex-center gap-x-2 w-full text-blue-600 dark:text-lightText-800 dark:font-bold">Fa</span>
             </div>
           </div>
-          <div className="flex items-center pl-[2px] pt-3.5 gap-x-2 h-full">
+          <div className="flex items-center pl-[2px] pt-3.5 gap-x-2 h-full child:dark:text-lightText-800 child:dark:font-bold">
             <RxExit className="text-lg" />
             <span>Exit</span>
           </div>
