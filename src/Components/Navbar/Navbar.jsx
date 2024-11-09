@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
 import { RxExit } from "react-icons/rx";
@@ -23,16 +24,6 @@ export default function Navbar() {
     localStorage.theme = "light";
   };
 
-  // const daekModeHandler = () => {
-  //   setDark(!dark);
-  //   if (localStorage.theme === "dark") {
-  //     document.documentElement.classList.remove("dark");
-  //     localStorage.theme = "light";
-  //   } else {
-  //     document.documentElement.classList.add("dark");
-  //     localStorage.setItem("theme", "dark");
-  //   }
-  // };
 
   return (
     <>
@@ -100,10 +91,10 @@ export default function Navbar() {
               <span className="flex-center gap-x-2 w-full text-blue-600 dark:text-lightText-800 dark:font-bold cursor-pointer">Fa</span>
             </div>
           </div>
-          <div className="flex items-center pl-[2px] pt-3.5 gap-x-2 h-full child:dark:text-lightText-800 child:dark:font-bold">
+          <Link to={"/Login"} className="flex items-center pl-[2px] pt-3.5 gap-x-2 h-full child:dark:text-lightText-800 child:dark:font-bold">
             <RxExit className="text-lg" />
             <span>Exit</span>
-          </div>
+          </Link>
         </Card>
       </Collapse>
     </>

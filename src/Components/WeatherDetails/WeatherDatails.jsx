@@ -56,70 +56,70 @@ export default function WeatherDatails() {
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
           <div>
             <div className="flex items-center flex-col h-[266px] w-[104px] py-[45px] bg-[#CDD9E0] dark:bg-[#3F4861] rounded-3xl">
             <h2 className="text-sm mb-6 border-b-2 border-b-[#7E7E7E] pb-[14px] px-2">Today</h2>
-            <img src="./public/images/svgs/image8.svg" alt="" />
+            <img src="/images/svgs/image8.svg" alt="" />
             <span className="text-lg mt-6">28°C</span>
             </div>
           </div>
